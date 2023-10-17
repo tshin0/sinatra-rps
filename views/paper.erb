@@ -1,0 +1,18 @@
+<h2> We played paper! </h2>
+
+<%if @player_input == 2 %>
+    <h2>They played paper! </h2>
+<%elsif @player_input == 1 %>
+    <h2>They played rock! </h2>
+<%else%> 
+    <h2>They played scissors!</h2>
+<%end%>
+
+
+<%if @my_input == @player_input %>
+    <h2>We tied!</h2>
+<%elsif @player_input == 1 %>
+    <h2>We won!</h2>
+<%else%> 
+    <h2>We lost!</h2>
+<%end%>
